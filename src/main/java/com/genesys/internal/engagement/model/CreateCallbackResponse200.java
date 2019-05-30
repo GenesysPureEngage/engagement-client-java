@@ -29,7 +29,7 @@ import java.io.IOException;
 /**
  * CreateCallbackResponse200
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-05-17T22:34:31.653Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-05-29T17:01:16.867Z")
 public class CreateCallbackResponse200 {
   @SerializedName("status")
   private SuccessStatus200 status = null;

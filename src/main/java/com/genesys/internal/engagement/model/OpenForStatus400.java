@@ -29,7 +29,7 @@ import java.util.UUID;
 /**
  * OpenForStatus400
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-05-17T22:34:31.653Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-05-29T17:01:16.867Z")
 public class OpenForStatus400 {
   @SerializedName("code")
   private BigDecimal code = null;
