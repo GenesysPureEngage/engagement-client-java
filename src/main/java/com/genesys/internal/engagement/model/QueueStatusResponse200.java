@@ -15,8 +15,8 @@ package com.genesys.internal.engagement.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import com.genesys.internal.engagement.model.QueueStatus;
 import com.genesys.internal.engagement.model.SuccessStatus200;
-import com.genesys.internal.engagement.model.VerifyCaptchaRequest;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -27,17 +27,17 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 
 /**
- * VerifyCaptchaResponse200
+ * QueueStatusResponse200
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-06-13T18:11:11.820Z")
-public class VerifyCaptchaResponse200 {
+public class QueueStatusResponse200 {
   @SerializedName("status")
   private SuccessStatus200 status = null;
 
   @SerializedName("data")
-  private VerifyCaptchaRequest data = null;
+  private QueueStatus data = null;
 
-  public VerifyCaptchaResponse200 status(SuccessStatus200 status) {
+  public QueueStatusResponse200 status(SuccessStatus200 status) {
     this.status = status;
     return this;
   }
@@ -55,7 +55,7 @@ public class VerifyCaptchaResponse200 {
     this.status = status;
   }
 
-  public VerifyCaptchaResponse200 data(VerifyCaptchaRequest data) {
+  public QueueStatusResponse200 data(QueueStatus data) {
     this.data = data;
     return this;
   }
@@ -65,11 +65,11 @@ public class VerifyCaptchaResponse200 {
    * @return data
   **/
   @ApiModelProperty(value = "")
-  public VerifyCaptchaRequest getData() {
+  public QueueStatus getData() {
     return data;
   }
 
-  public void setData(VerifyCaptchaRequest data) {
+  public void setData(QueueStatus data) {
     this.data = data;
   }
 
@@ -82,9 +82,9 @@ public class VerifyCaptchaResponse200 {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    VerifyCaptchaResponse200 verifyCaptchaResponse200 = (VerifyCaptchaResponse200) o;
-    return Objects.equals(this.status, verifyCaptchaResponse200.status) &&
-        Objects.equals(this.data, verifyCaptchaResponse200.data);
+    QueueStatusResponse200 queueStatusResponse200 = (QueueStatusResponse200) o;
+    return Objects.equals(this.status, queueStatusResponse200.status) &&
+        Objects.equals(this.data, queueStatusResponse200.data);
   }
 
   @Override
@@ -96,7 +96,7 @@ public class VerifyCaptchaResponse200 {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class VerifyCaptchaResponse200 {\n");
+    sb.append("class QueueStatusResponse200 {\n");
     
     sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("    data: ").append(toIndentedString(data)).append("\n");

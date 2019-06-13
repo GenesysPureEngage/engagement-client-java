@@ -15,8 +15,6 @@ package com.genesys.internal.engagement.model;
 
 import java.util.Objects;
 import java.util.Arrays;
-import com.genesys.internal.engagement.model.SuccessStatus200;
-import com.genesys.internal.engagement.model.VerifyCaptchaRequest;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -27,50 +25,50 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 
 /**
- * VerifyCaptchaResponse200
+ * PushTarget
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-06-13T18:11:11.820Z")
-public class VerifyCaptchaResponse200 {
-  @SerializedName("status")
-  private SuccessStatus200 status = null;
+public class PushTarget {
+  @SerializedName("channel")
+  private String channel = null;
 
-  @SerializedName("data")
-  private VerifyCaptchaRequest data = null;
+  @SerializedName("target")
+  private String target = null;
 
-  public VerifyCaptchaResponse200 status(SuccessStatus200 status) {
-    this.status = status;
+  public PushTarget channel(String channel) {
+    this.channel = channel;
     return this;
   }
 
    /**
-   * Get status
-   * @return status
+   * Channel name. The only accepted value is &#39;FCM&#39; for now.
+   * @return channel
   **/
-  @ApiModelProperty(value = "")
-  public SuccessStatus200 getStatus() {
-    return status;
+  @ApiModelProperty(example = "FCM", required = true, value = "Channel name. The only accepted value is 'FCM' for now.")
+  public String getChannel() {
+    return channel;
   }
 
-  public void setStatus(SuccessStatus200 status) {
-    this.status = status;
+  public void setChannel(String channel) {
+    this.channel = channel;
   }
 
-  public VerifyCaptchaResponse200 data(VerifyCaptchaRequest data) {
-    this.data = data;
+  public PushTarget target(String target) {
+    this.target = target;
     return this;
   }
 
    /**
-   * Get data
-   * @return data
+   * Token identifying the recipient of the message.
+   * @return target
   **/
-  @ApiModelProperty(value = "")
-  public VerifyCaptchaRequest getData() {
-    return data;
+  @ApiModelProperty(required = true, value = "Token identifying the recipient of the message.")
+  public String getTarget() {
+    return target;
   }
 
-  public void setData(VerifyCaptchaRequest data) {
-    this.data = data;
+  public void setTarget(String target) {
+    this.target = target;
   }
 
 
@@ -82,24 +80,24 @@ public class VerifyCaptchaResponse200 {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    VerifyCaptchaResponse200 verifyCaptchaResponse200 = (VerifyCaptchaResponse200) o;
-    return Objects.equals(this.status, verifyCaptchaResponse200.status) &&
-        Objects.equals(this.data, verifyCaptchaResponse200.data);
+    PushTarget pushTarget = (PushTarget) o;
+    return Objects.equals(this.channel, pushTarget.channel) &&
+        Objects.equals(this.target, pushTarget.target);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(status, data);
+    return Objects.hash(channel, target);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class VerifyCaptchaResponse200 {\n");
+    sb.append("class PushTarget {\n");
     
-    sb.append("    status: ").append(toIndentedString(status)).append("\n");
-    sb.append("    data: ").append(toIndentedString(data)).append("\n");
+    sb.append("    channel: ").append(toIndentedString(channel)).append("\n");
+    sb.append("    target: ").append(toIndentedString(target)).append("\n");
     sb.append("}");
     return sb.toString();
   }
