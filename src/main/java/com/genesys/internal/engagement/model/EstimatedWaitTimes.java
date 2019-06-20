@@ -22,7 +22,7 @@ import java.util.List;
 /**
  * EstimatedWaitTimes
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-06-13T18:11:11.820Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-06-20T13:37:22.453Z")
 public class EstimatedWaitTimes extends ArrayList<EstimatedWaitTime> {
 
   @Override
