@@ -32,7 +32,7 @@ import org.threeten.bp.OffsetDateTime;
 /**
  * CreateCallbackParms
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-08-15T18:51:03.846Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-08-27T12:32:43.616Z")
 public class CreateCallbackParms {
   @SerializedName("serviceName")
   private String serviceName = null;

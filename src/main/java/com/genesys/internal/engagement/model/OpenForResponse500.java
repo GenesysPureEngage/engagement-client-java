@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * OpenForResponse500
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-08-15T18:51:03.846Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-08-27T12:32:43.616Z")
 public class OpenForResponse500 {
   @SerializedName("status")
   private OpenForStatus500 status = null;
