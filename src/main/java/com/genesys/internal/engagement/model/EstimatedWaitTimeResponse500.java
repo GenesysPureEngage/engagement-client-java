@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * EstimatedWaitTimeResponse500
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-08-27T12:32:43.616Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-08-28T11:20:07.485Z")
 public class EstimatedWaitTimeResponse500 {
   @SerializedName("status")
   private EstimatedWaitTimeStatus500 status = null;
