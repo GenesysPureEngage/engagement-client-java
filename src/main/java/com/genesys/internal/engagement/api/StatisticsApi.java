@@ -27,10 +27,9 @@ import com.google.gson.reflect.TypeToken;
 import java.io.IOException;
 
 
-import com.genesys.internal.engagement.model.CallInRequestsParms;
-import com.genesys.internal.engagement.model.CallInRequestsResponse200;
-import com.genesys.internal.engagement.model.CallInRequestsResponse400;
-import com.genesys.internal.engagement.model.CallInRequestsResponse500;
+import com.genesys.internal.engagement.model.StatisticsResponse200;
+import com.genesys.internal.engagement.model.StatisticsResponse401;
+import com.genesys.internal.engagement.model.StatisticsResponse500;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -38,14 +37,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class CallInApi {
+public class StatisticsApi {
     private ApiClient apiClient;
 
-    public CallInApi() {
+    public StatisticsApi() {
         this(Configuration.getDefaultApiClient());
     }
 
-    public CallInApi(ApiClient apiClient) {
+    public StatisticsApi(ApiClient apiClient) {
         this.apiClient = apiClient;
     }
 
@@ -58,19 +57,18 @@ public class CallInApi {
     }
 
     /**
-     * Build call for callInRequests
+     * Build call for statistics
      * @param xApiKey API Key. For example,  Z2y9eiTiQZ4ceKNpxy1YAarhpvxJXPCj4rFrbVep (required)
-     * @param body Request properties. (required)
      * @param progressListener Progress listener
      * @param progressRequestListener Progress request listener
      * @return Call to execute
      * @throws ApiException If fail to serialize the request body object
      */
-    public com.squareup.okhttp.Call callInRequestsCall(String xApiKey, CallInRequestsParms body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
-        Object localVarPostBody = body;
+    public com.squareup.okhttp.Call statisticsCall(String xApiKey, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+        Object localVarPostBody = null;
 
         // create path and map variables
-        String localVarPath = "/call-in/requests/create";
+        String localVarPath = "/statistics/operations/get-statistic-ex";
 
         List<Pair> localVarQueryParams = new ArrayList<Pair>();
         List<Pair> localVarCollectionQueryParams = new ArrayList<Pair>();
@@ -106,65 +104,57 @@ public class CallInApi {
         }
 
         String[] localVarAuthNames = new String[] {  };
-        return apiClient.buildCall(localVarPath, "POST", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
+        return apiClient.buildCall(localVarPath, "GET", localVarQueryParams, localVarCollectionQueryParams, localVarPostBody, localVarHeaderParams, localVarFormParams, localVarAuthNames, progressRequestListener);
     }
 
     @SuppressWarnings("rawtypes")
-    private com.squareup.okhttp.Call callInRequestsValidateBeforeCall(String xApiKey, CallInRequestsParms body, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
+    private com.squareup.okhttp.Call statisticsValidateBeforeCall(String xApiKey, final ProgressResponseBody.ProgressListener progressListener, final ProgressRequestBody.ProgressRequestListener progressRequestListener) throws ApiException {
         
         // verify the required parameter 'xApiKey' is set
         if (xApiKey == null) {
-            throw new ApiException("Missing the required parameter 'xApiKey' when calling callInRequests(Async)");
-        }
-        
-        // verify the required parameter 'body' is set
-        if (body == null) {
-            throw new ApiException("Missing the required parameter 'body' when calling callInRequests(Async)");
+            throw new ApiException("Missing the required parameter 'xApiKey' when calling statistics(Async)");
         }
         
 
-        com.squareup.okhttp.Call call = callInRequestsCall(xApiKey, body, progressListener, progressRequestListener);
+        com.squareup.okhttp.Call call = statisticsCall(xApiKey, progressListener, progressRequestListener);
         return call;
 
     }
 
     /**
-     * Creates a Click-to-call-in request.
-     * Creates a Click-To-Call-in request to retrieve the inbound call instructions such as the number to dial and an optional pin.
+     * Get the values of a set of statistics.
+     * Provides a proxy to the GWS statistics API. GWS credentials must be entered in the credentials UI.
      * @param xApiKey API Key. For example,  Z2y9eiTiQZ4ceKNpxy1YAarhpvxJXPCj4rFrbVep (required)
-     * @param body Request properties. (required)
-     * @return CallInRequestsResponse200
+     * @return StatisticsResponse200
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public CallInRequestsResponse200 callInRequests(String xApiKey, CallInRequestsParms body) throws ApiException {
-        ApiResponse<CallInRequestsResponse200> resp = callInRequestsWithHttpInfo(xApiKey, body);
+    public StatisticsResponse200 statistics(String xApiKey) throws ApiException {
+        ApiResponse<StatisticsResponse200> resp = statisticsWithHttpInfo(xApiKey);
         return resp.getData();
     }
 
     /**
-     * Creates a Click-to-call-in request.
-     * Creates a Click-To-Call-in request to retrieve the inbound call instructions such as the number to dial and an optional pin.
+     * Get the values of a set of statistics.
+     * Provides a proxy to the GWS statistics API. GWS credentials must be entered in the credentials UI.
      * @param xApiKey API Key. For example,  Z2y9eiTiQZ4ceKNpxy1YAarhpvxJXPCj4rFrbVep (required)
-     * @param body Request properties. (required)
-     * @return ApiResponse&lt;CallInRequestsResponse200&gt;
+     * @return ApiResponse&lt;StatisticsResponse200&gt;
      * @throws ApiException If fail to call the API, e.g. server error or cannot deserialize the response body
      */
-    public ApiResponse<CallInRequestsResponse200> callInRequestsWithHttpInfo(String xApiKey, CallInRequestsParms body) throws ApiException {
-        com.squareup.okhttp.Call call = callInRequestsValidateBeforeCall(xApiKey, body, null, null);
-        Type localVarReturnType = new TypeToken<CallInRequestsResponse200>(){}.getType();
+    public ApiResponse<StatisticsResponse200> statisticsWithHttpInfo(String xApiKey) throws ApiException {
+        com.squareup.okhttp.Call call = statisticsValidateBeforeCall(xApiKey, null, null);
+        Type localVarReturnType = new TypeToken<StatisticsResponse200>(){}.getType();
         return apiClient.execute(call, localVarReturnType);
     }
 
     /**
-     * Creates a Click-to-call-in request. (asynchronously)
-     * Creates a Click-To-Call-in request to retrieve the inbound call instructions such as the number to dial and an optional pin.
+     * Get the values of a set of statistics. (asynchronously)
+     * Provides a proxy to the GWS statistics API. GWS credentials must be entered in the credentials UI.
      * @param xApiKey API Key. For example,  Z2y9eiTiQZ4ceKNpxy1YAarhpvxJXPCj4rFrbVep (required)
-     * @param body Request properties. (required)
      * @param callback The callback to be executed when the API call finishes
      * @return The request call
      * @throws ApiException If fail to process the API call, e.g. serializing the request body object
      */
-    public com.squareup.okhttp.Call callInRequestsAsync(String xApiKey, CallInRequestsParms body, final ApiCallback<CallInRequestsResponse200> callback) throws ApiException {
+    public com.squareup.okhttp.Call statisticsAsync(String xApiKey, final ApiCallback<StatisticsResponse200> callback) throws ApiException {
 
         ProgressResponseBody.ProgressListener progressListener = null;
         ProgressRequestBody.ProgressRequestListener progressRequestListener = null;
@@ -185,8 +175,8 @@ public class CallInApi {
             };
         }
 
-        com.squareup.okhttp.Call call = callInRequestsValidateBeforeCall(xApiKey, body, progressListener, progressRequestListener);
-        Type localVarReturnType = new TypeToken<CallInRequestsResponse200>(){}.getType();
+        com.squareup.okhttp.Call call = statisticsValidateBeforeCall(xApiKey, progressListener, progressRequestListener);
+        Type localVarReturnType = new TypeToken<StatisticsResponse200>(){}.getType();
         apiClient.executeAsync(call, localVarReturnType, callback);
         return call;
     }

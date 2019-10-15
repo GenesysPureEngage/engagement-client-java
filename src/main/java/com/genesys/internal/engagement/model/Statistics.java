@@ -15,41 +15,14 @@ package com.genesys.internal.engagement.model;
 
 import java.util.Objects;
 import java.util.Arrays;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
-import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
 import io.swagger.annotations.ApiModel;
-import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
 
 /**
- * NotificationPublish
+ * The response from the GWS statistics API.
  */
+@ApiModel(description = "The response from the GWS statistics API.")
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-10-15T14:00:21.326Z")
-public class NotificationPublish {
-  @SerializedName("name")
-  private String name = null;
-
-  public NotificationPublish name(String name) {
-    this.name = name;
-    return this;
-  }
-
-   /**
-   * Message id as reported by FCM.
-   * @return name
-  **/
-  @ApiModelProperty(required = true, value = "Message id as reported by FCM.")
-  public String getName() {
-    return name;
-  }
-
-  public void setName(String name) {
-    this.name = name;
-  }
-
+public class Statistics {
 
   @Override
   public boolean equals(java.lang.Object o) {
@@ -59,22 +32,20 @@ public class NotificationPublish {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    NotificationPublish notificationPublish = (NotificationPublish) o;
-    return Objects.equals(this.name, notificationPublish.name);
+    return true;
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name);
+    return Objects.hash();
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class NotificationPublish {\n");
+    sb.append("class Statistics {\n");
     
-    sb.append("    name: ").append(toIndentedString(name)).append("\n");
     sb.append("}");
     return sb.toString();
   }

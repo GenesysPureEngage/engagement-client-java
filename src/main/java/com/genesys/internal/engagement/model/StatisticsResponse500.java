@@ -15,6 +15,7 @@ package com.genesys.internal.engagement.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import com.genesys.internal.engagement.model.StatisticsStatus500;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -25,29 +26,29 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 
 /**
- * NotificationPublish
+ * StatisticsResponse500
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-10-15T14:00:21.326Z")
-public class NotificationPublish {
-  @SerializedName("name")
-  private String name = null;
+public class StatisticsResponse500 {
+  @SerializedName("status")
+  private StatisticsStatus500 status = null;
 
-  public NotificationPublish name(String name) {
-    this.name = name;
+  public StatisticsResponse500 status(StatisticsStatus500 status) {
+    this.status = status;
     return this;
   }
 
    /**
-   * Message id as reported by FCM.
-   * @return name
+   * Get status
+   * @return status
   **/
-  @ApiModelProperty(required = true, value = "Message id as reported by FCM.")
-  public String getName() {
-    return name;
+  @ApiModelProperty(value = "")
+  public StatisticsStatus500 getStatus() {
+    return status;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setStatus(StatisticsStatus500 status) {
+    this.status = status;
   }
 
 
@@ -59,22 +60,22 @@ public class NotificationPublish {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    NotificationPublish notificationPublish = (NotificationPublish) o;
-    return Objects.equals(this.name, notificationPublish.name);
+    StatisticsResponse500 statisticsResponse500 = (StatisticsResponse500) o;
+    return Objects.equals(this.status, statisticsResponse500.status);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name);
+    return Objects.hash(status);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class NotificationPublish {\n");
+    sb.append("class StatisticsResponse500 {\n");
     
-    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
     sb.append("}");
     return sb.toString();
   }

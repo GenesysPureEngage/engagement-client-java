@@ -15,6 +15,8 @@ package com.genesys.internal.engagement.model;
 
 import java.util.Objects;
 import java.util.Arrays;
+import com.genesys.internal.engagement.model.Statistics;
+import com.genesys.internal.engagement.model.SuccessStatus200;
 import com.google.gson.TypeAdapter;
 import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
@@ -25,29 +27,50 @@ import io.swagger.annotations.ApiModelProperty;
 import java.io.IOException;
 
 /**
- * NotificationPublish
+ * StatisticsResponse200
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-10-15T14:00:21.326Z")
-public class NotificationPublish {
-  @SerializedName("name")
-  private String name = null;
+public class StatisticsResponse200 {
+  @SerializedName("status")
+  private SuccessStatus200 status = null;
 
-  public NotificationPublish name(String name) {
-    this.name = name;
+  @SerializedName("data")
+  private Statistics data = null;
+
+  public StatisticsResponse200 status(SuccessStatus200 status) {
+    this.status = status;
     return this;
   }
 
    /**
-   * Message id as reported by FCM.
-   * @return name
+   * Get status
+   * @return status
   **/
-  @ApiModelProperty(required = true, value = "Message id as reported by FCM.")
-  public String getName() {
-    return name;
+  @ApiModelProperty(value = "")
+  public SuccessStatus200 getStatus() {
+    return status;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setStatus(SuccessStatus200 status) {
+    this.status = status;
+  }
+
+  public StatisticsResponse200 data(Statistics data) {
+    this.data = data;
+    return this;
+  }
+
+   /**
+   * Get data
+   * @return data
+  **/
+  @ApiModelProperty(value = "")
+  public Statistics getData() {
+    return data;
+  }
+
+  public void setData(Statistics data) {
+    this.data = data;
   }
 
 
@@ -59,22 +82,24 @@ public class NotificationPublish {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    NotificationPublish notificationPublish = (NotificationPublish) o;
-    return Objects.equals(this.name, notificationPublish.name);
+    StatisticsResponse200 statisticsResponse200 = (StatisticsResponse200) o;
+    return Objects.equals(this.status, statisticsResponse200.status) &&
+        Objects.equals(this.data, statisticsResponse200.data);
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(name);
+    return Objects.hash(status, data);
   }
 
 
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class NotificationPublish {\n");
+    sb.append("class StatisticsResponse200 {\n");
     
-    sb.append("    name: ").append(toIndentedString(name)).append("\n");
+    sb.append("    status: ").append(toIndentedString(status)).append("\n");
+    sb.append("    data: ").append(toIndentedString(data)).append("\n");
     sb.append("}");
     return sb.toString();
   }

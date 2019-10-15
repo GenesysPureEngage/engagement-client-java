@@ -27,10 +27,10 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 /**
- * QueueStatus500
+ * StatisticsStatus500
  */
 @javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-10-15T14:00:21.326Z")
-public class QueueStatus500 {
+public class StatisticsStatus500 {
   @SerializedName("code")
   private BigDecimal code = null;
 
@@ -40,7 +40,7 @@ public class QueueStatus500 {
   @SerializedName("corrId")
   private UUID corrId = null;
 
-  public QueueStatus500 code(BigDecimal code) {
+  public StatisticsStatus500 code(BigDecimal code) {
     this.code = code;
     return this;
   }
@@ -58,7 +58,7 @@ public class QueueStatus500 {
     this.code = code;
   }
 
-  public QueueStatus500 message(String message) {
+  public StatisticsStatus500 message(String message) {
     this.message = message;
     return this;
   }
@@ -76,7 +76,7 @@ public class QueueStatus500 {
     this.message = message;
   }
 
-  public QueueStatus500 corrId(UUID corrId) {
+  public StatisticsStatus500 corrId(UUID corrId) {
     this.corrId = corrId;
     return this;
   }
@@ -103,10 +103,10 @@ public class QueueStatus500 {
     if (o == null || getClass() != o.getClass()) {
       return false;
     }
-    QueueStatus500 queueStatus500 = (QueueStatus500) o;
-    return Objects.equals(this.code, queueStatus500.code) &&
-        Objects.equals(this.message, queueStatus500.message) &&
-        Objects.equals(this.corrId, queueStatus500.corrId);
+    StatisticsStatus500 statisticsStatus500 = (StatisticsStatus500) o;
+    return Objects.equals(this.code, statisticsStatus500.code) &&
+        Objects.equals(this.message, statisticsStatus500.message) &&
+        Objects.equals(this.corrId, statisticsStatus500.corrId);
   }
 
   @Override
@@ -118,7 +118,7 @@ public class QueueStatus500 {
   @Override
   public String toString() {
     StringBuilder sb = new StringBuilder();
-    sb.append("class QueueStatus500 {\n");
+    sb.append("class StatisticsStatus500 {\n");
     
     sb.append("    code: ").append(toIndentedString(code)).append("\n");
     sb.append("    message: ").append(toIndentedString(message)).append("\n");
