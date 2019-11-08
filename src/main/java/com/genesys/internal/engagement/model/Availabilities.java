@@ -31,7 +31,7 @@ import java.util.List;
 /**
  * Availabilities
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-10-24T21:45:14.209Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2019-11-07T11:09:25.012Z")
 public class Availabilities {
   @SerializedName("slots")
   private List<Slot> slots = null;
