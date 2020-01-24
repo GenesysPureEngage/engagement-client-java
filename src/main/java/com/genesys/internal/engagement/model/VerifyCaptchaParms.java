@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * VerifyCaptchaParms
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-01-09T17:37:37.437Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-01-15T16:28:10.881Z")
 public class VerifyCaptchaParms {
   @SerializedName("siteKey")
   private String siteKey = null;
