@@ -29,7 +29,7 @@ import java.io.IOException;
 /**
  * OpenForResponse200
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-01-15T16:28:10.881Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-01-30T13:08:01.697Z")
 public class OpenForResponse200 {
   @SerializedName("status")
   private SuccessStatus200 status = null;
