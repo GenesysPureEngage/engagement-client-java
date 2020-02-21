@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * NotificationPublishParms
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-01-30T13:08:01.697Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-02-13T21:22:34.287Z")
 public class NotificationPublishParms {
   @SerializedName("channel")
   private String channel = null;
