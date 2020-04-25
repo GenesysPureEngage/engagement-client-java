@@ -29,7 +29,7 @@ import java.io.IOException;
 /**
  * VerifyCaptchaResponse200
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-03-13T13:20:06.794Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-04-24T14:00:53.957Z")
 public class VerifyCaptchaResponse200 {
   @SerializedName("status")
   private SuccessStatus200 status = null;

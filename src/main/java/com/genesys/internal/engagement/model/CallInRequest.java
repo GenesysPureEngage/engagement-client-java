@@ -29,7 +29,7 @@ import java.util.UUID;
 /**
  * CallInRequest
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-03-13T13:20:06.794Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-04-24T14:00:53.957Z")
 public class CallInRequest {
   @SerializedName("id")
   private UUID id = null;

@@ -29,7 +29,7 @@ import java.io.IOException;
  * List of proposed slots and capacities.
  */
 @ApiModel(description = "List of proposed slots and capacities.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-03-13T13:20:06.794Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-04-24T14:00:53.957Z")
 public class ProposedSlots {
   @SerializedName("slots")
   private HashData slots = null;

@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * StatisticsResponse401
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-03-13T13:20:06.794Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-04-24T14:00:53.957Z")
 public class StatisticsResponse401 {
   @SerializedName("status")
   private StatisticsStatus401 status = null;

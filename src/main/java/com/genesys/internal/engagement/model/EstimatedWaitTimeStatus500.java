@@ -29,7 +29,7 @@ import java.util.UUID;
 /**
  * EstimatedWaitTimeStatus500
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-03-13T13:20:06.794Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-04-24T14:00:53.957Z")
 public class EstimatedWaitTimeStatus500 {
   @SerializedName("code")
   private BigDecimal code = null;
