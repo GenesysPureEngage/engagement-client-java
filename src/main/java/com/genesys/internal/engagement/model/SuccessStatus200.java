@@ -29,7 +29,7 @@ import java.util.UUID;
 /**
  * SuccessStatus200
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-05-19T15:28:46.182Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-06-11T19:58:42.343Z")
 public class SuccessStatus200 {
   @SerializedName("code")
   private BigDecimal code = null;
