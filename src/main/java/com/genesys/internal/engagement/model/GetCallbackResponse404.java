@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * GetCallbackResponse404
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-06-11T19:58:42.343Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-07-02T16:03:45.912Z")
 public class GetCallbackResponse404 {
   @SerializedName("status")
   private GetCallbackStatus404 status = null;
