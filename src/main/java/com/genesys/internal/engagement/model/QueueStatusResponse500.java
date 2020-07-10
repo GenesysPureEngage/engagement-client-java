@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * QueueStatusResponse500
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-07-02T16:03:45.912Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-07-10T14:06:23.972Z")
 public class QueueStatusResponse500 {
   @SerializedName("status")
   private QueueStatus500 status = null;
