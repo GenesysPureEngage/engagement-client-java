@@ -28,7 +28,7 @@ import java.util.UUID;
 /**
  * CreateCallbackData
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-08-31T08:44:15.256Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-09-04T15:11:16.761Z")
 public class CreateCallbackData {
   @SerializedName("id")
   private UUID id = null;

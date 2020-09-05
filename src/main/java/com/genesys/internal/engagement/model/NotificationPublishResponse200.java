@@ -29,7 +29,7 @@ import java.io.IOException;
 /**
  * NotificationPublishResponse200
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-08-31T08:44:15.256Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-09-04T15:11:16.761Z")
 public class NotificationPublishResponse200 {
   @SerializedName("status")
   private SuccessStatus200 status = null;
