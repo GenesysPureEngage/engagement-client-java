@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * VerifyCaptchaResponse500
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-09-04T15:11:16.761Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-09-09T20:09:22.479Z")
 public class VerifyCaptchaResponse500 {
   @SerializedName("status")
   private VerifyCaptchaRequestsStatus500 status = null;
