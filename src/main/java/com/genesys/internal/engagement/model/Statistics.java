@@ -21,7 +21,7 @@ import io.swagger.annotations.ApiModel;
  * The response from the GWS statistics API.
  */
 @ApiModel(description = "The response from the GWS statistics API.")
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-09-09T20:09:22.479Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-09-17T14:43:40.585Z")
 public class Statistics {
 
   @Override

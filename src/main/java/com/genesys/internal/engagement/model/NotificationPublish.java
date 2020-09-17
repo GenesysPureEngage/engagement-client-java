@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * NotificationPublish
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-09-09T20:09:22.479Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-09-17T14:43:40.585Z")
 public class NotificationPublish {
   @SerializedName("name")
   private String name = null;

@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * CancelCallbackResponse400
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-09-09T20:09:22.479Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-09-17T14:43:40.585Z")
 public class CancelCallbackResponse400 {
   @SerializedName("status")
   private CancelCallbackStatus400 status = null;
