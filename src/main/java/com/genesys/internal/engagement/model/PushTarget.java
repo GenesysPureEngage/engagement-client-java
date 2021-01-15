@@ -27,7 +27,7 @@ import java.io.IOException;
 /**
  * PushTarget
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2020-10-02T21:47:12.801Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2021-01-14T20:04:12.523Z")
 public class PushTarget {
   @SerializedName("channel")
   private String channel = null;
