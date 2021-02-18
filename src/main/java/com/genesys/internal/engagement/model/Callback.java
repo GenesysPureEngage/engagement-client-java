@@ -30,7 +30,7 @@ import org.threeten.bp.OffsetDateTime;
 /**
  * Callback
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2021-01-14T20:04:12.523Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2021-02-17T16:45:10.210Z")
 public class Callback {
   @SerializedName("id")
   private UUID id = null;
