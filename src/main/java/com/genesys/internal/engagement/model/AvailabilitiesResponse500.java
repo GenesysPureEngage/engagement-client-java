@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * AvailabilitiesResponse500
  */
-@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2022-01-27T00:28:13.799Z")
+@javax.annotation.Generated(value = "io.swagger.codegen.languages.JavaClientCodegen", date = "2022-03-03T19:46:33.534Z")
 public class AvailabilitiesResponse500 {
   @SerializedName("status")
   private AvailabilitiesStatus500 status = null;
